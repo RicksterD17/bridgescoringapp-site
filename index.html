@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duplicate Bridge Scoring: score your home bridge game</title>
+<meta name="description" content="Score a duplicate bridge game at home: Howell and Mitchell movements for 4 to 36 pairs, table cards and travelers printed for tonight's game, results as you go. Easy to read, with big buttons and large text.">
+<link rel="icon" href="images/icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  body { max-width: 62rem; padding-top: 0; }
+
+  .hero { margin: 0 -1.25rem; padding: 3rem 1.25rem 2.5rem; text-align: center; color: #fff;
+          background: radial-gradient(ellipse at 50% 100%, #1f6b3a 0%, #134d29 50%, #0b3a1e 100%); border-radius: 0 0 28px 28px; }
+  .hero > img { width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
+  .hero h1 { font-size: 2.6rem; margin: 1rem 0 .25rem; letter-spacing: -.02em; }
+  .hero p { font-size: 1.2rem; margin: 0 auto; max-width: 32rem; }
+  .hero .platforms { margin-top: .75rem; font-size: 1rem; opacity: .95; }
+  /* The official badge, unmodified (Apple's badge guidelines). */
+  .hero .badges { display: flex; justify-content: center; margin-top: 1.75rem; }
+  .hero .badges a { display: block; line-height: 0; border-radius: 10px; }
+  .hero .badges a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .hero .badges .apple { width: 156px; height: 52px; }
+
+  h2 { font-size: 1.4rem; margin-top: 3rem; }
+  .lead { font-size: 1.15rem; max-width: 44rem; }
+
+  .prints { display: flex; justify-content: center; align-items: flex-end; gap: 2rem; flex-wrap: wrap; margin: 2rem 0 1rem; }
+  .prints figure { margin: 0; text-align: center; }
+  .prints img { display: block; margin: 0 auto .75rem; height: auto; background: #fff; border: 1px solid var(--line);
+                border-radius: 6px; box-shadow: 0 12px 32px rgb(0 0 0 / .15); }
+  .prints .card img { width: 300px; }
+  .prints .travelers img { width: 420px; max-width: 100%; }
+  .prints figcaption, .shots figcaption { font-size: .95rem; color: var(--muted); max-width: 26rem; }
+
+  .shots { display: flex; justify-content: center; align-items: flex-end; gap: 2rem; flex-wrap: wrap; margin: 2rem 0 1rem; }
+  .shots figure { margin: 0; text-align: center; }
+  .shots img { display: block; width: 230px; height: auto; margin: 0 auto .75rem; border-radius: 30px;
+               border: 1px solid var(--line); box-shadow: 0 12px 32px rgb(0 0 0 / .18); }
+
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1rem; margin-top: 2.5rem; }
+  .feature { background: var(--card); border-radius: 18px; padding: 1.25rem; }
+  .feature svg { width: 32px; height: 32px; color: var(--accent); }
+  .feature h3 { margin: .5rem 0 .25rem; font-size: 1.05rem; }
+  .feature p { margin: 0; font-size: .95rem; }
+
+  .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+  .app { border: 1px solid var(--line); border-radius: 18px; padding: 1.25rem 1.5rem; }
+  .app h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+  .app ul { margin: 0; padding-left: 1.2rem; }
+  .app li { margin: .25rem 0; }
+  .contact { margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="images/icon.png" alt="">
+  <h1>Duplicate Bridge Scoring</h1>
+  <p>Run a duplicate bridge game at home.</p>
+  <p class="platforms">For iPhone and iPad. Easy to read, with big buttons and large text.</p>
+  <div class="badges">
+    <a href="https://apps.apple.com/app/id606651615"><img class="apple" src="images/app-store-badge.svg" width="156" height="52" alt="Download on the App Store"></a>
+  </div>
+</header>
+
+<main>
+<h2>Table cards and travelers for tonight's game</h2>
+<p class="lead">Enter the pairs' names, and the app prints a card for each table and a traveler for each board, with tonight's pairs already filled in. Put the cards on the tables, cut the travelers apart, and play.</p>
+<div class="prints">
+  <figure class="card">
+    <img src="images/table-card.jpg" width="772" height="1000" alt="A printed table card for Table 1: the pairs and boards for each round, and where North, South, East and West go next, printed facing each seat">
+    <figcaption>A table card: every round's pairs and boards, and where each seat goes next.</figcaption>
+  </figure>
+  <figure class="travelers">
+    <img src="images/travelers.jpg" width="1200" height="927" alt="A printed page of four travelers, boards 1 to 4, each with the dealer, vulnerability and the pairs who play it, with cut lines between them">
+    <figcaption>Travelers, four to a page: the dealer, the vulnerability and the pairs who play each board.</figcaption>
+  </figure>
+</div>
+
+<div class="shots">
+  <figure>
+    <img src="images/iphone-contract.jpg" width="462" height="1000" alt="iPhone: entering a result for Board 7 by contract, 4 hearts by South made 4, with the score under each result button">
+    <figcaption>Enter the score, or the contract</figcaption>
+  </figure>
+  <figure>
+    <img src="images/iphone-results.jpg" width="460" height="1000" alt="iPhone: the results of a match, pairs in order with their percentages">
+    <figcaption>Results as you go</figcaption>
+  </figure>
+</div>
+
+<section class="features" aria-label="Features">
+  <div class="feature">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3l4 4-4 4"/><path d="M3 7h18"/><path d="M7 21l-4-4 4-4"/><path d="M21 17H3"/></svg>
+    <h3>The right movement</h3>
+    <p>Howell and Mitchell movements for 4 to 36 pairs. With an odd number of pairs, the app sits a pair out for you.</p>
+  </div>
+  <div class="feature">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+    <h3>Scores in, results out</h3>
+    <p>Type each score as it's written on the traveler, or tap the contract. Save &amp; Next goes straight to the next table.</p>
+  </div>
+  <div class="feature">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4l2-12 2 12h4"/><path d="M14 4h6M17 4v8"/></svg>
+    <h3>Easy to read</h3>
+    <p>Big buttons, a Text Size setting that goes very large, and light or dark appearance.</p>
+  </div>
+  <div class="feature">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+    <h3>No account, no ads</h3>
+    <p>Your matches stay on your device. One price, no subscription.</p>
+  </div>
+</section>
+
+<h2>Support, privacy and accessibility</h2>
+<div class="apps">
+  <section class="app" aria-labelledby="ios">
+    <h3 id="ios">iPhone and iPad</h3>
+    <ul>
+      <li><a href="ios/">Support</a></li>
+      <li><a href="ios/privacy.html">Privacy Policy</a></li>
+      <li><a href="ios/accessibility.html">Accessibility</a></li>
+    </ul>
+  </section>
+  <section class="app" aria-labelledby="android">
+    <h3 id="android">Android</h3>
+    <ul>
+      <li><a href="android/">Support</a></li>
+      <li><a href="android/privacy.html">Privacy Policy</a></li>
+      <li><a href="android/accessibility.html">Accessibility</a></li>
+    </ul>
+  </section>
+</div>
+
+<div class="contact">
+  <p style="margin:0">Questions, problems or suggestions? Email <a href="mailto:bridgescoringapp@gmail.com?subject=Bridge%20Scores%20support">bridgescoringapp@gmail.com</a>.</p>
+</div>
+</main>
+
+<footer>Apple, the Apple logo, iPhone, iPad and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.
+Android is a trademark of Google LLC.</footer>
+</body>
+</html>
