@@ -15,12 +15,14 @@
   .hero > img { width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
   .hero h1 { font-size: 2.6rem; margin: 1rem 0 .25rem; letter-spacing: -.02em; }
   .hero p { font-size: 1.2rem; margin: 0 auto; max-width: 32rem; }
-  .hero .platforms { margin-top: .75rem; font-size: 1rem; opacity: .95; }
-  /* The official badge, unmodified (Apple's badge guidelines). */
-  .hero .badges { display: flex; justify-content: center; margin-top: 1.75rem; }
+  .hero .platforms { margin-top: .75rem; font-size: 1rem; opacity: .95; max-width: none; text-wrap: balance; }
+  /* Official store badges, unmodified (Apple and Google badge guidelines). Both show 52 px tall: Google's
+     PNG has 41 of 250 px transparent padding on each side, taken back with negative margins. */
+  .hero .badges { display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.75rem; }
   .hero .badges a { display: block; line-height: 0; border-radius: 10px; }
   .hero .badges a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
   .hero .badges .apple { width: 156px; height: 52px; }
+  .hero .badges .google { width: 199px; height: 77px; margin: -12.6px; }
 
   h2 { font-size: 1.4rem; margin-top: 3rem; }
   .lead { font-size: 1.15rem; max-width: 44rem; }
@@ -57,9 +59,10 @@
   <img src="images/icon.png" alt="">
   <h1>Duplicate Bridge Scoring</h1>
   <p>Run a duplicate bridge game at home.</p>
-  <p class="platforms">For iPhone and iPad. Easy to read, with big buttons and large text.</p>
+  <p class="platforms">For iPhone, iPad and Android. Easy to read, with big buttons and large text.</p>
   <div class="badges">
     <a href="https://apps.apple.com/app/id606651615"><img class="apple" src="images/app-store-badge.svg" width="156" height="52" alt="Download on the App Store"></a>
+    <a href="https://play.google.com/store/apps/details?id=com.ricksterware.BridgeScoringApp"><img class="google" src="images/google-play-badge.png" width="200" height="77" alt="Get it on Google Play"></a>
   </div>
 </header>
 
@@ -137,6 +140,6 @@
 </main>
 
 <footer>Apple, the Apple logo, iPhone, iPad and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.
-Android is a trademark of Google LLC.</footer>
+Android, Google Play and the Google Play logo are trademarks of Google LLC.</footer>
 </body>
 </html>
